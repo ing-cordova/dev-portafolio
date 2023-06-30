@@ -1,14 +1,15 @@
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { ImGithub } from "react-icons/im";
+import { socialmedia } from "../../../portfolio.js";
 
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-      <a href="https://www.linkedin.com/in/ing-cordova/" target="_blank" rel="noreferrer">
+      <a href={socialmedia.linkedin} target="_blank" rel="noreferrer">
         <BsLinkedin />
       </a>
-      <a href="https://github.com/ing-cordova/" target="_blank" rel="noreferrer">
+      <a href={socialmedia.github} target="_blank" rel="noreferrer">
         <ImGithub />
       </a>
     </div>
