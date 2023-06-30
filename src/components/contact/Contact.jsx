@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "emailjs-com";
-import { MdOutlineEmail } from "react-icons/md";
-import { ImWhatsapp } from "react-icons/im";
+import { contactSection } from "../../portfolio";
 
 const Contact = () => {
   const form = useRef();
@@ -20,30 +19,42 @@ const Contact = () => {
     e.target.reset();
   };
 
+  if (!contactSection.display) {
+    return null;
+  }
   return (
     <section id="contact">
       <h5>Get in touch</h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>andrescordovaoficial@gmail.com</h5>
-            <a href="mailto:andrescordovaoficial@gmail.com">Send a message</a>
-          </article>
-          <article className="contact__option">
-            <ImWhatsapp className="contact__option-icon" />
-            <h4>Whatsapp</h4>
-            <h5>+503 79677324</h5>
-            <a
-              href="https://wa.me/50379677324/?text=Hello!"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Send a message
-            </a>
-          </article>
+          {contactSection.wayToContact.map(({ id, icon, name, contact }) => {
+            return (
+              <article className="contact__option" key={id}>
+                {icon &&
+                  React.createElement(icon, {
+                    className: "contact__option-icon",
+                  })}
+                <h4>{name}</h4>
+                <h5>{contact}</h5>
+                {name === "Whatsapp" ? (
+                  <a
+                    href={`https://wa.me/${contact}/?text=Hello!`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Send a message
+                  </a>
+                ) : name === "Email" ? (
+                  <a href={`mailto:${contact}`}>Send a message</a>
+                ) : (
+                  <a href={contact} target="_blank" rel="noreferrer">
+                    Send a message
+                  </a>
+                )}
+              </article>
+            );
+          })}
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <input
