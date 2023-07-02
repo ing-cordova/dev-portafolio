@@ -10,10 +10,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_8m1npef",
-      "template_wyxzlsh",
+      process.env.REACT_APP_SERVICE_EMAILJS_TOKEN,
+      process.env.REACT_APP_TEMPLATE_EMAILJS_TOKEN,
       form.current,
-      "63ir2P71RWUmlLUHo"
+      process.env.REACT_APP_USER_ID_EMAILJS_TOKEN
     );
 
     e.target.reset();

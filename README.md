@@ -16,7 +16,19 @@ Firstable, feel free to use it if you want. What you have to do is the following
 npm install
 ```
 
-2. Second, you have to execute this command:
+2. Second, you have to replace the enviroment variables in order to get the possibilty to interact with clients via email.
+**For this, you have to go to https://www.emailjs.com/ and login to get the keys to use in this.**
+
+```
+#Setup default environment variables
+
+#For Linux
+cp env.example .env
+#For Windows
+copy env.example .env
+```
+
+3. Third, you have to execute this command:
 ```node
 npm start
 ```
