@@ -12,38 +12,48 @@ const Portafolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {portfolioSection.projects.map(({ id, image, title, github, demo }) => {
-          return (
-            <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-              <div className="portfolio__item-cta">
-                {github !== null ? (
-                  <a
-                    href={github}
-                    className="btn"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github
-                  </a>
-                ) : null}
-                {demo !== null ? (
-                  <a
-                    href={demo}
-                    className="btn btn-primary"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live Demo
-                  </a>
-                ) : null}
-              </div>
-            </article>
-          );
-        })}
+        {portfolioSection.projects.map(
+          ({ id, image, title, technologies, github, demo }) => {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+
+                <div className="portfolio__item-tags">
+                  {technologies.map((technology, index) => (
+                    <span key={index} className="portfolio__item-tag">
+                      {technology}
+                    </span>
+                  ))}
+                </div>
+                <div className="portfolio__item-cta">
+                  {github !== null ? (
+                    <a
+                      href={github}
+                      className="btn"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </a>
+                  ) : null}
+                  {demo !== null ? (
+                    <a
+                      href={demo}
+                      className="btn btn-primary"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo
+                    </a>
+                  ) : null}
+                </div>
+              </article>
+            );
+          }
+        )}
       </div>
     </section>
   );

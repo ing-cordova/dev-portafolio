@@ -139,10 +139,13 @@ const portfolioSection = {
       id: 1,
       image: IMG1,
       title: "My Portofolio Web",
+      technologies: [
+        "JavaScript", "React JS", "CSS"
+      ],
       // if you want to hide the buttons for Github Repository or Demo Live, just replace the link for null.
       github: "https://github.com/ing-cordova/dev-portafolio",
       demo: null,
-    },
+    }
   ],
   display: true,
 };
