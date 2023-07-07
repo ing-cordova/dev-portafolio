@@ -26,6 +26,27 @@
     margin: 1.2rem 0 2rem;
 }
 
+.portfolio__item-tags {
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.portfolio__item-tag {
+    margin: 3px 0 3px 0;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.portfolio__item-tag:hover {
+    background-color: var(--color-primary-variant);
+    cursor: pointer;
+}
+
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
