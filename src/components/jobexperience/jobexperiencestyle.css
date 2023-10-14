@@ -1,0 +1,52 @@
+.jobexperience__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.jobexperience__container>div {
+    background: var(--color-bg-variant);
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    display: flex; /* Agregar esto para que los elementos internos sean flexibles */
+    align-items: center; /* Centrar verticalmente los elementos internos */
+}
+
+.jobexperience__container>div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.jobexperience__content {
+    width: 60%; /* Hacer que este div ocupe todo el espacio disponible */
+    padding: 1.5rem; /* Mover el padding a este div en lugar de los divs internos */
+    display: flex; /* Hacer que los elementos internos sean flexibles */
+    justify-content: space-between; /* Colocar los elementos internos a la par */
+    align-items: center; /* Centrar verticalmente los elementos internos */
+}
+
+.div__image img {
+    max-width: 100%;
+    border-radius: 25px;
+    height: auto;
+    margin-right: 1rem; /* Espacio entre la imagen y los datos */
+}
+
+.div__data {
+    flex: 1; /* Hacer que este div ocupe todo el espacio disponible */
+    display: flex; /* Hacer que los elementos internos sean flexibles */
+    flex-direction: column; /* Colocar los elementos internos en columna */
+    gap: 0.3rem;
+    margin-left: 1rem; /* Espacio entre la imagen y los datos */
+}
+
+.location{
+    display: block;
+    width: fit-content;
+    background: var(--color-primary-variant);
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem;
+}
