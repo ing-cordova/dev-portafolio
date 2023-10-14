@@ -21,7 +21,7 @@ const infoSection = {
   career: "Full Stack Developer",
   photo: ME,
   cvLink:
-    "https://drive.google.com/file/d/1QvmHWsYblMC77YjuqVhVkTbgfqEju8gD/view",
+    "https://drive.google.com/file/d/1yznWPfEdQJcvTP9-uPcWLAfvXpygQxzl/view?usp=sharing",
   // If you do not want to show one section, just replace this prop (display) to false.
   display: true,
 };
