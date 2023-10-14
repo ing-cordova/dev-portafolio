@@ -5,12 +5,15 @@ import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { MdWorkOutline } from "react-icons/md";
+
 import {
   infoSection,
   aboutSection,
   technologiesStack,
   servicesSection,
   contactSection,
+  jobExperience,
 } from "../../portfolio";
 
 const Nav = () => {
@@ -34,6 +37,15 @@ const Nav = () => {
           className={active === "#about" ? "active" : ""}
         >
           <AiOutlineUser />
+        </a>
+      )}
+      {!jobExperience.display ? null : (
+        <a
+          href="#jobexperience"
+          onClick={() => setActive("#jobexperience")}
+          className={active === "#jobexperience" ? "active" : ""}
+        >
+          <MdWorkOutline />
         </a>
       )}
       {!technologiesStack.display ? null : (

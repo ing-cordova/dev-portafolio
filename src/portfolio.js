@@ -9,6 +9,9 @@ import IMG1 from "../src/assets/my-porfolio.png";
 import AvatarWoman from "../src/assets/avatar_woman.jpg";
 import AvatarMan from "../src/assets/avatar_men.jpg";
 
+import TechyWeLogo from "../src/assets/techy-we-logo.jpeg"
+import TelusDigitalSolutionsLogo from "../src/assets/telus.jpeg"
+
 // If you want to add or change the icon, please make sure to visit this page: https://react-icons.github.io/react-icons/
 import { MdOutlineEmail } from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
@@ -18,7 +21,7 @@ const infoSection = {
   career: "Full Stack Developer",
   photo: ME,
   cvLink:
-    "https://drive.google.com/file/d/1QvmHWsYblMC77YjuqVhVkTbgfqEju8gD/view",
+    "https://drive.google.com/file/d/1yznWPfEdQJcvTP9-uPcWLAfvXpygQxzl/view?usp=sharing",
   // If you do not want to show one section, just replace this prop (display) to false.
   display: true,
 };
@@ -79,6 +82,10 @@ const technologiesStack = {
       level: "Intermediate",
     },
     {
+      title: "Loopback 4",
+      level: "Beginner",
+    },
+    {
       title: "MongoDB",
       level: "Intermediate",
     },
@@ -109,6 +116,32 @@ const technologiesStack = {
   ],
   display: true,
 };
+
+const jobExperience = {
+  jobs:[
+    {
+      id: 1, 
+      title: "Software Development Trainee",
+      company: "Telus International",
+      image: TelusDigitalSolutionsLogo,
+      description:"Trainee at Telus International Digital Solutions.",
+      dateTo: "01-2023",
+      dateFrom: "04-2023",
+      location: "remote",
+    },
+    {
+      id: 2,
+      title: "Software Developer",
+      company: "TechyWe",
+      image: TechyWeLogo,
+      description:"Backend Developer at TechyWe El Salvador.",
+      dateTo: "07-2023",
+      dateFrom: "-",
+      location: "remote",
+    }
+  ],
+  display: true,
+}
 
 const servicesSection = {
   services: [
@@ -191,6 +224,7 @@ const contactSection = {
 export {
   infoSection,
   contactSection,
+  jobExperience,
   socialmedia,
   aboutSection,
   technologiesStack,
