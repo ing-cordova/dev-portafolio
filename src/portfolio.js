@@ -11,6 +11,7 @@ import AvatarMan from "../src/assets/avatar_men.jpg";
 
 import TechyWeLogo from "../src/assets/techy-we-logo.jpeg"
 import TelusDigitalSolutionsLogo from "../src/assets/telus.jpeg"
+import Innovacion from "../src/assets/innovacion.jpeg"	
 
 // If you want to add or change the icon, please make sure to visit this page: https://react-icons.github.io/react-icons/
 import { MdOutlineEmail } from "react-icons/md";
@@ -21,7 +22,7 @@ const infoSection = {
   career: "Full Stack Developer",
   photo: ME,
   cvLink:
-    "https://drive.google.com/file/d/1yznWPfEdQJcvTP9-uPcWLAfvXpygQxzl/view?usp=sharing",
+    "https://drive.google.com/file/d/1-6Lk-tRmjSL08wk-5iaZyiGJBA_EDIPT/view?usp=sharing",
   // If you do not want to show one section, just replace this prop (display) to false.
   display: true,
 };
@@ -37,11 +38,11 @@ const socialmedia = {
 
 const aboutSection = {
   photo: AboutImage,
-  experience: 0.6,
-  clients: 0,
+  experience: 1.2,
+  clients: 1,
   projects: 4,
   desciption:
-    "Fifth year Systems Engineering student, I have developed a few software and applications in my process as a student using several programming languages and some other technologies. I believe in the power of agile methodologies as the main driver of good software development in the most efficient way. I am a self- taught person, with the ability to learn something new every day for my professional and personal development.",
+    "Systems Engineer, I love programming and building innovative applications. I have worked with different programming languages, as well as other development technologies, for different environments. My second language is English, I consider it a good communication tool between us. I believe in the power of agile methodologies as the main driver of good software development in the most efficient way. Passionate about technology, I like to work in a team and collaborate with others, finally I am a self-taught person, with the ability to learn something new every day for my professional and personal development.",
   display: true,
 };
 
@@ -70,6 +71,10 @@ const technologiesStack = {
     {
       title: "Bootstrap",
       level: "Intermediate",
+    },
+    {
+      title: "Vue 3",
+      level: "Beginner",
     },
   ],
   backend: [
@@ -136,8 +141,18 @@ const jobExperience = {
       image: TechyWeLogo,
       description:"Backend Developer at TechyWe El Salvador.",
       dateTo: "07-2023",
-      dateFrom: "-",
+      dateFrom: "04-2024",
       location: "remote",
+    },
+    {
+      id: 3,
+      title: "Frontend Developer",
+      company: "Secretaria de Innovación de la Presidencia",
+      image: Innovacion,
+      description:"Working on some of the most innovative projects in the country.",
+      dateTo: "05-2024",
+      dateFrom: "-",
+      location: "onsite",
     }
   ],
   display: true,
@@ -215,7 +230,7 @@ const contactSection = {
       id: 2,
       icon: ImWhatsapp,
       name: "Whatsapp",
-      contact: "+50379677324",
+      contact: "+50376592632",
     },
   ],
   display: true,

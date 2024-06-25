@@ -29,8 +29,8 @@ const About = () => {
                 <small>No experience yet</small>
               ) : aboutSection.experience === 1 ? (
                 <small>1 Year Working Experience</small>
-              ) : aboutSection.experience < 2 ? (
-                <small>Less than 1 Year Working Experience</small>
+              ) : aboutSection.experience >= 1 && aboutSection.experience < 2 ? (
+                <small>+1 Year Working Experience</small>
               ) : (
                 <small>
                   {aboutSection.experience} Years Working Experience

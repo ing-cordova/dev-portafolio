@@ -24,7 +24,7 @@ const JobExperience = () => {
                 <h5>
                   {job.dateTo} - {job.dateFrom === '-' ? 'Present' : job.dateFrom}
                 </h5>
-                <h5 className="location">{job.location.charAt(0).toUpperCase() + job.location.slice(1)}</h5>
+                <h5 className={job.location === 'remote' ? 'location' : 'onsite'}>{job.location.charAt(0).toUpperCase() + job.location.slice(1)}</h5>
               </div>
             </div>
           );
