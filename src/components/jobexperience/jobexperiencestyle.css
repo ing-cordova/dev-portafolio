@@ -51,6 +51,14 @@
     padding: 0.2rem 0.5rem;
 }
 
+.onsite{
+    display: block;
+    width: fit-content;
+    background: var(--color-bg-variant-second);
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem;
+}
+
 @media screen and (max-width: 1024px){
     .jobexperience__container{
         flex-direction: column;
