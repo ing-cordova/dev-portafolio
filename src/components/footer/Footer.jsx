@@ -58,9 +58,9 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href={socialmedia.facebook} target="_blank" rel="noreferrer">
+        {/* <a href={socialmedia.facebook} target="_blank" rel="noreferrer">
           <BsFacebook />
-        </a>
+        </a> */}
         <a href={socialmedia.twitter} target="_blank" rel="noreferrer">
           <BsTwitter />
         </a>
