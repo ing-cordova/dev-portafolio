@@ -30,9 +30,9 @@ const infoSection = {
 const socialmedia = {
   github: "https://github.com/ing-cordova/",
   linkedin: "https://www.linkedin.com/in/ing-cordova/",
-  twitter: "https://twitter.com/cordovasv",
+  twitter: "https://twitter.com/educordova19",
   instagram: null,
-  facebook: "https://www.facebook.com/cordova.sv",
+  facebook: null,
   whatsapp: null,
 };
 
